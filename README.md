@@ -5,6 +5,8 @@
 
 <!-- badges: start -->
 
+[![Travis build
+status](https://travis-ci.com/adeel1997/farsdata.svg?branch=master)](https://travis-ci.com/adeel1997/farsdata)
 <!-- badges: end -->
 
 The goal of farsdata is to read the Fatality Analysis Reporting System
