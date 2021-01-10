@@ -18,7 +18,9 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of farsdata is to ...
+The goal of farsdata is to read the Fatality Analysis Reporting System data. 
+This package is created as a part of assignment of JHU Software development course. 
+
 
 ## Installation
 
