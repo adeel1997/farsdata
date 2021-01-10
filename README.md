@@ -13,20 +13,33 @@ The goal of farsdata is to read the Fatality Analysis Reporting System
 data. This package is created as a part of assignment of JHU Software
 development course.
 
+
 ## Installation
 
-You can install the released version of farsdata from
-[CRAN](https://CRAN.R-project.org) with:
+You can install the released version of farsdata from [CRAN](https://CRAN.R-project.org) with:
 
 ``` r
 install.packages("farsdata")
+
+# Or below code if above code unable install the package
+
+devtools::install_github('adeel1997/farsdata')
 ```
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+
+You can load the package and read the sample dataset.
 
 ``` r
 library(farsdata)
-## basic example code
+library(maps)
+
+fars_2013_file <- make_filename(2013)
+fars_2013 <- fars_read(fars_2013_file) 
+dim(fars_2013)
+## [1] 30202    50
 ```
+
+The data in this package come from the National Highway Traffic Safety Administration (NHTSA) Fatality Analysis Reporting System (FARS) data.
+

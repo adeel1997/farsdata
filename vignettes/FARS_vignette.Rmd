@@ -14,6 +14,25 @@ knitr::opts_chunk$set(
 )
 ```
 
-```{r setup}
-library(farsdata)
+```{r setenv, echo=FALSE, message=FALSE}
+library('farsdata')
+library('mapdata')
+library('lubridate')
 ```
+
+This package is primarily built for to check how to build package in R. The package enables one to explore fatal traffic accidents from 2013-2015 using data from the National Highway Traffic Safety Administration (NHTSA) Fatality Analysis Reporting System (FARS). This package is part of assignment of JHU Software development track. 
+
+## The Data
+
+The data in this package come from the National Highway Traffic Safety Administration (NHTSA) Fatality Analysis Reporting System (FARS) data.
+
+```{r sample2013_data}
+fars_2013_fn <- make_filename(2013)
+fars_2013 <- fars_read(fars_2013_fn) 
+dim(fars_2013)
+fars_2013
+```
+
+For detailed information about the data, see the [NHTSA FARS Manuals & Documentation page]
+(https://crashstats.nhtsa.dot.gov/#/DocumentTypeList/4). 
+
